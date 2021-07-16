@@ -160,6 +160,9 @@ h1{
   background-color: black;
   padding: 40px;
   z-index: 300;
+}
+
+.container_cv a{
   font-family: "sci-fi", serif;
 }
 
