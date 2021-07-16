@@ -151,6 +151,17 @@ h1{
   left: 1600px;
 }
 
+.container_cv{
+  position: absolute;
+  top: 0px;
+  left: 620px;
+  height: 100px;
+  width: 600px;
+  background-color: black;
+  padding: 40px;
+  z-index: 300;
+  font-family: "sci-fi", serif;
+}
 
 .container_about_me{
   position: absolute;

@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$( ".planet" ).hide("fast");
 	$( ".target" ).hide("fast");
 	$( ".container_about_me" ).hide("fast");
+	$( ".container_cv" ).hide("fast");
 
 
 
@@ -41,6 +42,7 @@ $(document).ready(function() {
 	var slide_puzzle_bool = true;
 	var slide_project_bool = false;
 	var slide_about_me_bool = false;
+	var slide_cv_bool = false;
 	var scaner_bool = false;
 
 
@@ -74,8 +76,10 @@ $(document).ready(function() {
 		slide_puzzle();
 		$( ".projetcs_screen" ).slideUp("slow");
 		$( ".container_about_me" ).slideUp("slow");
+		$( ".container_cv" ).slideUp("slow");
 		slide_project_bool = false;
 		slide_about_me_bool = false;
+		slide_cv_bool = false;
 	});
 
 	function slide_project(){
@@ -102,6 +106,16 @@ $(document).ready(function() {
 		}else{
 			$( ".container_about_me" ).slideDown("slow");
 			slide_about_me_bool = true;
+		}
+	}
+
+	function slide_cv(){
+		if (slide_cv_bool == true) {
+			$( ".container_cv" ).slideUp("slow");
+			slide_cv_bool = false;
+		}else{
+			$( ".container_cv" ).slideDown("slow");
+			slide_cv_bool = true;
 		}
 	}
 
@@ -285,6 +299,8 @@ $(document).ready(function() {
 		}else if (col == 1 && row == 2) {
 		}else if (col == 2 && row == 2) {//cv
 			slide_puzzle();
+			slide_cv();
+
 		}else if (col == 3 && row == 2) {
 		}else if (col == 1 && row == 3) {//history
 			slide_puzzle();
