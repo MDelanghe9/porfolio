@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 
 
-
 	/*$(".target").hide();*/
 	$(".scrap").hide();
 	$(".target_btn_true").hide();
@@ -88,6 +87,12 @@ $(document).ready(function() {
 			slide_project_bool = true;
 		}
 	}
+
+
+	$('.trad_about_me').click(function() {
+		$( ".alien_p" ).css("font-family", 'serif');
+		$('.trad_about_me').hide("fast");
+	});
 
 
 	function slide_about(){
